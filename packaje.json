@@ -1,9 +1,0 @@
-{
-  "name": "uclone-server",
-  "version": "1.0.0",
-  "description": "Server for uclone. GraphQL, Typescrypt, NodeJS",
-  "main": "index.js",
-  "repository": "",
-  "author": "Batura Taras <baturataras@gmail.com",
-  "license": "MIT"
-}
