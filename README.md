@@ -1,5 +1,17 @@
 Server for uclone. GraphQL, Typescrypt, NodeJS.
 
+## How to start
+
+### server
+
+1 yarn install
+2 install on your device postgress database
+3 Setup .env file with the following data
+DB_ENDPOINT=localhost
+DB_USERNAME=name
+DB_PASSWORD=pass
+4 yarn dev
+
 ## Resolvers
 
 ### Public Resolvers:
