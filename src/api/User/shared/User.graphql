@@ -22,5 +22,5 @@ type User {
 }
 
 type Query {
-  user(name: String!): User!
+  user: User!
 }
