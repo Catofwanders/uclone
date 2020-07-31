@@ -2,59 +2,62 @@ Server for uclone. GraphQL, Typescrypt, NodeJS.
 
 ## How to start
 
-### server
+## Server
 
-1 yarn install
-2 install on your device postgress database
-3 Setup .env file with the following data
-DB_ENDPOINT=localhost
-DB_USERNAME=name
-DB_PASSWORD=pass
-4 yarn dev
+### 1 `yarn install`
+
+### 2 install on your device postgress database
+
+### 3 Setup .env file with the following data:
+
+- `DB_ENDPOINT=localhost`
+- `DB_USERNAME=name`
+- `DB_PASSWORD=pass`
+- `yarn run dev`
 
 ## Resolvers
 
 ### Public Resolvers:
 
-- [x] Sign In / Sign Up with Facebook
-- [x] Sign In with Email
-- [x] Start Phone Number Verification
-- [x] Complete Phone Number Verification
-- [x] Sign Up with Email
+- [ ] Sign In / Sign Up with Facebook
+- [ ] Sign In with Email
+- [ ] Start Phone Number Verification
+- [ ] Complete Phone Number Verification
+- [ ] Sign Up with Email
 
 ---
 
 ### Authentication:
 
-- [x] Generate JWT
-- [x] Verifiy JWT
+- [ ] Generate JWT
+- [ ] Verifiy JWT
 
 ---
 
 ### Private Resolvers:
 
-- [x] Get my Profile
-- [x] Request Email Verification
-- [x] Complete Email Verification
-- [x] Update my Profile
-- [x] Toggle Driving Mode
-- [x] Report Location / Orientation
-- [x] Add Place
-- [x] Edit Place
-- [x] Delete Place
-- [x] Get My Places
-- [x] See Nearby Drivers
-- [x] Subscribe to Nearby Drivers
-- [x] Request a Ride
-- [x] Get Nearby Ride Requests
-- [x] Subscribe to Nearby Ride Requests
-- [x] Update Ride Status
-- [x] Get Ride
-- [x] Subscribe to Ride Status
-- [x] Create a Chat Room
-- [x] Get Chat Room Messages
-- [x] Send a Chat Message
-- [x] Subscribe to Chat Room Messages
+- [ ] Get my Profile
+- [ ] Request Email Verification
+- [ ] Complete Email Verification
+- [ ] Update my Profile
+- [ ] Toggle Driving Mode
+- [ ] Report Location / Orientation
+- [ ] Add Place
+- [ ] Edit Place
+- [ ] Delete Place
+- [ ] Get My Places
+- [ ] See Nearby Drivers
+- [ ] Subscribe to Nearby Drivers
+- [ ] Request a Ride
+- [ ] Get Nearby Ride Requests
+- [ ] Subscribe to Nearby Ride Requests
+- [ ] Update Ride Status
+- [ ] Get Ride
+- [ ] Subscribe to Ride Status
+- [ ] Create a Chat Room
+- [ ] Get Chat Room Messages
+- [ ] Send a Chat Message
+- [ ] Subscribe to Chat Room Messages
 
 ## Code Challenge
 
