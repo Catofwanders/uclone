@@ -1,7 +1,7 @@
 type User {
   id: Int!
   text: String!
-  email: Boolean!
+  email: String
   verifiedEmail: Boolean!
   firstName: String!
   lastName: String!
@@ -17,6 +17,7 @@ type User {
   lastLng: Float!
   lastLat: Float!
   lastOrientation: Float
+  fbId: String
   chat: Chat
   messages: [Message]
   verifications: [Verification]
