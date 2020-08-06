@@ -1,13 +1,13 @@
-import { Resolvers } from "src/types/resolvers";
+import { Resolvers } from "../../../types/resolvers";
 import {
   FacebookConnectMutationArgs,
   FacebookConnectResponse,
-} from "src/types/graph";
-import User from "src/entities/User";
+} from "../../../types/graph";
+import User from "../../../entities/User";
 
 const resolvers: Resolvers = {
   Mutation: {
-    FacebokConnect: async (
+    FacebookConnect: async (
       _,
       args: FacebookConnectMutationArgs
     ): Promise<FacebookConnectResponse> => {
