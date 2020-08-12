@@ -29,7 +29,7 @@ Server for uclone. GraphQL, Typescrypt, NodeJS.
 
 ### Authentication:
 
-- [ ] Generate JWT
+- [x] Generate JWT
 - [ ] Verifiy JWT
 
 ---
