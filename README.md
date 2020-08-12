@@ -22,8 +22,8 @@ Server for uclone. GraphQL, Typescrypt, NodeJS.
 - [x] Sign In / Sign Up with Facebook
 - [x] Sign In with Email
 - [x] Start Phone Number Verification
-- [ ] Complete Phone Number Verification
-- [ ] Sign Up with Email
+- [x] Complete Phone Number Verification
+- [x] Sign Up with Email
 
 ---
 
