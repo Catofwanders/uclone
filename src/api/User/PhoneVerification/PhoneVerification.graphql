@@ -3,6 +3,19 @@ type PhoneVerificationResponse {
   error: String
 }
 
+type CompletePhoneVerificationResponse {
+  ok: Boolean!
+  error: String
+  token: String
+}
+
 type Mutation {
   PhoneVerification(phoneNumber: String!): PhoneVerificationResponse!
+}
+
+type Mutation {
+  CompletePhoneVerification(
+    phoneNumber: String!
+    key: String!
+  ): CompletePhoneVerificationResponse!
 }
