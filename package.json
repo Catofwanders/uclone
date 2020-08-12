@@ -27,6 +27,7 @@
     "types": "graphql-to-typescript ./src/schema.graphql  ./src/types/graph.d.ts"
   },
   "dependencies": {
+    "@types/twilio": "^2.11.0",
     "bcrypt": "^5.0.0",
     "class-validator": "^0.12.2",
     "cors": "^2.8.5",
@@ -37,6 +38,7 @@
     "helmet": "^3.23.3",
     "morgan": "^1.10.0",
     "pg": "^8.2.1",
+    "twilio": "^3.48.2",
     "typeorm": "^0.2.25"
   }
 }
