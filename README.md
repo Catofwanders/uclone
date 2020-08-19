@@ -13,6 +13,10 @@ Server for uclone. GraphQL, Typescrypt, NodeJS.
 - `DB_ENDPOINT=localhost`
 - `DB_USERNAME=name`
 - `DB_PASSWORD=pass`
+- `TWILIO_TOKEN=`
+- `TWILIO_SID=`
+- `TWILIO_PHONE=`
+- `JWT_TOKEN=`
 - `yarn run dev`
 
 ## Resolvers
@@ -30,7 +34,7 @@ Server for uclone. GraphQL, Typescrypt, NodeJS.
 ### Authentication:
 
 - [x] Generate JWT
-- [ ] Verifiy JWT
+- [x] Verifiy JWT
 
 ---
 

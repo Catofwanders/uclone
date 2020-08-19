@@ -8,6 +8,7 @@ import {
 import Verification from "../../../entities/Verification";
 import { sendVerificationSMS } from "../../../utils/sendSms";
 import User from "../../../entities/User";
+import createJWT from "../../../utils/createJWT";
 
 const resolvers: Resolvers = {
   Mutation: {
@@ -71,12 +72,13 @@ const resolvers: Resolvers = {
       try {
         const user = await User.findOne({ phoneNumber });
         if (user) {
+          const token = createJWT(user.id);
           user.verifiedPhoneNumber = true;
           user.save();
           return {
             ok: true,
             error: null,
-            token: "Coming soon",
+            token,
           };
         } else {
           return {

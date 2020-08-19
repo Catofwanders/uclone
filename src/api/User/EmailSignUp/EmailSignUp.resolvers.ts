@@ -4,17 +4,21 @@ import {
 } from "../../../types/graph";
 import User from "../../../entities/User";
 import { Resolvers } from "../../../types/resolvers";
+import createJWT from "../../../utils/createJWT";
 
 const resolvers: Resolvers = {
   Mutation: {
-    PhoneVerification: async (
+    EmailSignUp: async (
       _,
       args: EmailSignUpMutationArgs
     ): Promise<EmailSignUpResponse> => {
       const { email } = args;
-
       try {
-        const existingUser = User.findOne({ email });
+        const existingUser = await User.findOne({ email });
+        console.log(
+          "!!!!!!!!!!!!!!!!!!!!!!existingUser!!!!!!!!!!!!!!!!!",
+          existingUser
+        );
         if (existingUser) {
           return {
             ok: false,
@@ -22,17 +26,18 @@ const resolvers: Resolvers = {
             token: null,
           };
         } else {
-          await User.create({ ...args }).save();
+          const newUser = await User.create({ ...args }).save();
+          const token = createJWT(newUser.id);
           return {
             ok: true,
             error: null,
-            token: "Coming Soon",
+            token,
           };
         }
       } catch (error) {
         return {
           ok: false,
-          error: error.message,
+          error: error.message || "bla bla",
           token: null,
         };
       }
